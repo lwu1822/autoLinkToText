@@ -1,4 +1,4 @@
-^!c::{
+^!g::{
 	Send "^k"
 	Sleep 100
 	Send "{Tab}^c{Esc}"
@@ -19,4 +19,14 @@
 	Send "^f"
 	Sleep 1000
 	Send "^v"
+}
+
+^!c::{
+	Send "^c^l{End}{#}:~:text=^v^a^c"
+	Sleep 500
+	Send "{Esc}"
+	Sleep 500
+	Send "{Esc}"
+	Sleep 500
+	Send "{Esc}"
 }
