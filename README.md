@@ -1,1 +1,1 @@
-# autoLinkToText
+# Auto Link to Text
