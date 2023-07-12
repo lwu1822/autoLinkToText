@@ -4,7 +4,7 @@
 	Send "{Tab}^c{Esc}"
 	Sleep 100
 	WinActivate "ahk_exe WindowsTerminal.exe"
-	Send "cd ~/autoLinkToText{Enter}"
+	Send "cd ~/vscode/noteForNow/personal/autoLinkToText{Enter}"
 	Sleep 50
 	Send "./filterLink.sh{Enter}"
 	Sleep 100
@@ -23,10 +23,8 @@
 
 ^!c::{
 	Send "^c^l{End}{#}:~:text=^v^a^c"
-	Sleep 500
-	Send "{Esc}"
-	Sleep 500
-	Send "{Esc}"
-	Sleep 500
-	Send "{Esc}"
+	Loop 3 {
+		Sleep 500
+		Send "{Esc}"
+	}
 }
