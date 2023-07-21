@@ -22,8 +22,8 @@
 }
 
 ^!c::{
-	Send "^c^l{End}{#}:~:text=^v^a^c"
-	Loop 3 {
+	Send "^c^l{End}{#}:~:text=^v{Esc}^a^c"
+	Loop 2 {
 		Sleep 500
 		Send "{Esc}"
 	}
