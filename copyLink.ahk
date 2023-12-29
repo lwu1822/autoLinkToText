@@ -21,6 +21,7 @@
 	Send "^v"
 }
 
+; ^!c: copy text fragment link
 ^!c::{
 	Send "^c^l{End}{#}:~:text=^v{Esc}^a^c"
 	Loop 2 {
